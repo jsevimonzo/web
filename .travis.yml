@@ -8,3 +8,15 @@ before_install:
 
 script:
     - docker run -e CI=true reinforcement-learning/web npm run test -- --coverage
+
+deploy:
+    provider: elasticbeanstalk
+    region: "eu-west-1"
+    app: "docker-web"
+    env: "DockerWeb-env"
+    bucket_name: "elasticbeanstalk-eu-west-1-347553873653"
+    bucket_path: "docker-web"
+    on:
+        branch: master
+    access_key_id: $AWS_ACCESS_KEY
+    secret_access_id: $AWS_SECRET_KEY
