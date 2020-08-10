@@ -1,0 +1,17 @@
+.nav-bar {
+    background-color: #9DD8C6;
+    display: flex;
+    width: 100%;
+}
+
+.nav-bar > h2 {
+    margin-left: 1em;
+    color: #2A6956;
+    flex: 1;
+}
+
+.nav-bar > Button {
+    margin: 1em 1em 1em 0;
+    justify-self: flex-end;
+    width: 100px;
+}
