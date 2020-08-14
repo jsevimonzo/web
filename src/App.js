@@ -1,6 +1,6 @@
-import React from 'react';
-import Navbar from './Navbar/NavBar';
-import MainContainer from './MainContainer/MainContainer';
+import React from 'react'
+import Navbar from './Navbar/NavBar'
+import MainContainer from './MainContainer/MainContainer'
 import './App.css'
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
       <Navbar/>
       <MainContainer/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
